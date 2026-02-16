@@ -1,4 +1,4 @@
-# economics-analyzer
+# Economics Analyzer
 
 Small CLI tool for building macroeconomic reports from CSV files.
 
