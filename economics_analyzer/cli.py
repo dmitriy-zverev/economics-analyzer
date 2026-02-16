@@ -37,7 +37,7 @@ def run(files: Sequence[str], report_name: str) -> str:
 
     report = get_report(report_name)
     result = report.build(records)
-    return tabulate(result.rows, headers=result.headers, tablefmt="github")
+    return tabulate(result.rows, headers=result.headers, tablefmt="psql")
 
 
 def main(argv: Sequence[str] | None = None) -> int:
