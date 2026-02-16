@@ -1,2 +1,0 @@
-[console_scripts]
-economics-analyzer = economics_analyzer.cli:main
