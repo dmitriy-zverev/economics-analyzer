@@ -1,17 +1,27 @@
+Metadata-Version: 2.4
+Name: economics-analyzer
+Version: 0.1.0
+Summary: CLI tool for macroeconomic CSV reports
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tabulate>=0.9.0
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0.0; extra == "dev"
+Dynamic: license-file
+
 # economics-analyzer
 
 Small CLI tool for building macroeconomic reports from CSV files.
 
 Implemented report:
 - `average-gdp` — arithmetic mean GDP by country across all provided files, sorted descending.
-- `average-unemployment` — arithmetic mean unemployment by country across all provided files, sorted descending.
 
 ## Run
 
 ```bash
 uv sync
 uv run economics-analyzer --files data/economic1.csv data/economic2.csv --report average-gdp
-uv run economics-analyzer --files data/economic1.csv data/economic2.csv --report average-unemployment
 ```
 
 ## Test
